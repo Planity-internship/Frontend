@@ -10,13 +10,20 @@ function Main_layout() {
 
     return (
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_white_0%,_white_55%,_#F9BDB2_80%,_#F47C66_100%)] flex flex-col items-center justify-center px-4">
-            <img src={logo} className="h-[314px] mb-8" alt="Planity 로고" />
-            <div className="pt-50" />
-
-            <Button onClick={singup} className="bg-[#F47C66] h-12 w-60 text-xl rounded-lg shadow-md">
+            <img
+                src={logo}
+                className="h-[180px] w-auto mb-12 select-none pointer-events-none"
+                alt="Planity 로고"
+                draggable={false}
+            />
+            <Button
+                onClick={singup}
+                className="bg-[#F47C66] h-12 w-60 text-xl rounded-lg shadow-md"
+            >
                 시작하기
             </Button>
         </div>
     );
 }
+
 export default Main_layout;

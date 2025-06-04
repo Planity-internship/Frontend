@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 function Congratulations() {
     return (
-        <div className="flex flex-col items-center  min-h-screen px-10 py-35">
+        <div className="w-screen h-screen flex flex-col items-center px-10 py-35">
             <img src={logo} alt="로고" className="mb-[-8%] object-contain" />
             <div className="text-center font-bold">
                 <p className="text-4xl pb-5">모든 설정이</p>

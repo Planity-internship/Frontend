@@ -10,7 +10,8 @@ function Login_layout() {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center">
+        
+        < div className = "w-screen h-screen flex items-center justify-center overflow-hidden" >
             <div className="w-full max-w-sm bg-white  px-8 py-10 flex flex-col items-center">
                 <h1 className="text-[#F47C66] text-7xl  mb-10 login_title">
                     Planity
@@ -55,7 +56,7 @@ function Login_layout() {
                     </div>
                 </form>
             </div>
-        </div>
+        </div >
     );
 }
 
