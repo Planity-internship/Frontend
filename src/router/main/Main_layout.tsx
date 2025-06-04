@@ -18,7 +18,7 @@ function Main_layout() {
             />
             <Button
                 onClick={singup}
-                className="bg-[#F47C66] h-12 w-60 text-xl rounded-lg shadow-md"
+                className="bg-[#F47C66] h-12 w-60 text-lg rounded-lg shadow-md"
             >
                 시작하기
             </Button>

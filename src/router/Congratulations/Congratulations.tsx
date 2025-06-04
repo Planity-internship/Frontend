@@ -11,7 +11,7 @@ function Congratulations() {
                 <br />
             </div>
             <p className="pb-5">본격적으로 앱에 한번 들어가 볼까요?</p>
-            <Button className="bg-[#F47C66] h-10 w-60 text-md font-bold rounded-lg shadow-md">
+            <Button className="bg-[#F47C66] h-10 w-60 text-lg font-bold rounded-lg shadow-md">
                 시작하기
             </Button>
         </div>
