@@ -1,4 +1,8 @@
 import { Route, BrowserRouter, Routes } from "react-router";
+import Singup_layout from "./router/singup/Singup_layout";
+import Main_layout from "./router/main/Main_layout";
+import Login_layout from "./router/login/Login_layout";
+import Congratulations from "./router/Congratulations/Congratulations";
 
 function App() {
   return (
@@ -7,6 +11,10 @@ function App() {
       <div className="App">
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Main_layout />} />
+            <Route path="/signup" element={<Singup_layout />} />
+            <Route path="/login" element={<Login_layout />} />
+            <Route path="/Congratulations" element={<Congratulations />} />
           </Routes>
         </BrowserRouter>
       </div>
