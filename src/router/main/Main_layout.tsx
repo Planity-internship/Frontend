@@ -12,7 +12,7 @@ function Main_layout() {
         <div className="min-h-screen bg-[linear-gradient(to_bottom,_white_0%,_white_55%,_#F9BDB2_80%,_#F47C66_100%)] flex flex-col items-center justify-center px-4">
             <img
                 src={logo}
-                className="h-[290px] w-auto mb-40 select-none pointer-events-none"
+                className="h-[30vh] w-auto mb-40 select-none pointer-events-none"
                 alt="Planity 로고"
                 draggable={false}
             />
