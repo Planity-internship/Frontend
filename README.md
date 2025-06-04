@@ -9,7 +9,8 @@
     └── router
         ├── Public_compoment
         └── singup
-            └── compment
+        |    └── compment
+        └─  {name}
 ```
 ---
 
