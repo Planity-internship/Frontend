@@ -12,6 +12,14 @@
   font-family: 'yg-jalnan';
 }
 
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* 스크롤 완전 차단 */
+  margin: 0;
+  padding: 0;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
