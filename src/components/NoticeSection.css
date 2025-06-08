@@ -1,0 +1,49 @@
+.notice-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notice-item:last-child {
+  border-bottom: none;
+}
+
+.notice-text {
+  display: grid;
+  grid-template-columns: 90px 16px 1fr;
+  align-items: center;
+  flex: 1;
+}
+
+.notice-academy-name {
+  font-weight: bold;
+  white-space: nowrap;
+  max-width: 150px;              /* 너무 길면 2줄로, 필요시 더 늘려도 됨 */
+  display: inline-block;
+  text-align: left;
+  overflow-wrap: break-word;     /* 단어가 길면 강제 줄바꿈 */
+  word-break: break-word;
+  margin-right: 4px;
+}
+
+
+
+.divider {
+  margin: 0 12px;
+  color: #ccc;
+}
+
+.notice-content {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
+.arrow {
+  color: #888;
+  font-size: 16px;
+  margin-left: 8px;
+}

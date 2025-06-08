@@ -1,0 +1,43 @@
+.schedule-wrapper {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 16px;
+  margin: 24px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.schedule-row:last-child {
+  border-bottom: none;
+}
+
+.schedule-academy-name {
+  flex: 2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.academy-days {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+}
+
+.academy-time {
+  flex: 1.5;
+  text-align: center;
+  font-size: 13px;
+}
+
+.phone-icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+

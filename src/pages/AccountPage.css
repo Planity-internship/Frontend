@@ -1,0 +1,155 @@
+.page-wrapper {
+  width: 393px;
+  height: 852px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 8px #eee;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.account-header-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 10px;
+  justify-content: space-between;
+  /* padding-top: 16px; */
+}
+
+.account-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  flex: none;
+}
+
+.bell-icon {
+  font-size: 22px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.edit-child-btn {
+  display: flex;
+  justify-content: flex-start;   /* 버튼 내부 글자(내용)를 왼쪽 정렬 */
+  padding-left: 16px;            /* 글자만 왼쪽에서 16px 떨어지게 */
+}
+
+.edit-child-text {
+  margin-left: 12px; /* 원하는 만큼 조절 (예: 12~16px) */
+}
+
+
+/* .account-profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 4px #eee;
+  padding: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.profile-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+}
+
+.edit-child-btn {
+  width: 100%;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  padding: 12px 0;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 18px;
+  color: #bbb;
+  margin-right: 12px;
+}
+
+.account-menu-list {
+  background: #f8f8f8;
+  border-radius: 18px;
+  padding: 18px 18px 18px 18px;
+  box-shadow: 0 1px 4px #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #222;
+}
+
+.menu-title {
+  font-weight: 500;
+}
+
+.menu-value {
+  font-size: 14px;
+  color: #888;
+  margin-left: 8px;
+}
+
+.menu-label {
+  font-size: 13px;
+  color: #ff694b;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.menu-divider {
+  height: 1px;
+  background: #eee;
+  margin: 8px 0;
+  border-radius: 1px;
+}
+
+.notification-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.page-content {
+  padding: 0; /* 반드시 padding을 0으로 설정! */
+}
