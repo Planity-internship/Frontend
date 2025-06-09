@@ -7,7 +7,7 @@ import Login_layout from "./router/login/Login_layout";
 import Singup_layout from "./router/singup/Singup_layout";
 import Main_layout from "./router/Start_page/Main_layout";
 import Congratulations from "./router/Congratulations/Congratulations";
-import Home from "./router/Home/Home";
+import Home from "./router/Home/HomeLayout";
 import TimetablePage from "./router/TimetablePage/TimetablePage";
 import CommunityPage from "./router/CommunityPage/CommunityPage";
 import MessagePage from "./router/MessagePage/MessagePage";

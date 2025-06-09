@@ -1,6 +1,7 @@
 //@ts-nocheck
-import React, { useState } from "react";
+import { useState } from "react";
 import "./CommunityPage.css";
+import BottomNavBar from "@/components/BottomNavBar";
 
 // 더미 게시글 데이터 (반드시 상단에 정의)
 const initialPosts = [
@@ -107,41 +108,57 @@ const CommunityPage = () => {
   };
 
   return (
-    <div className="page-content">
-      <div className="community-header-row">
-        <h2 className="community-title">게시판</h2>
-        <div className="community-region">[ 부산 | 진구 ] 자유게시판 ▼</div>
-        <button
-          className="header-add-button"
-          onClick={() => setShowModal(true)}
-          aria-label="글쓰기"
-        >
-          ＋
-        </button>
-        <img
-          src="/images/Icon.png"
-          alt="notification"
-          className="notification-icon"
-        />
-      </div>
-      <div className="post-list">
-        {posts.map((post) => (
-          <div className="post-card" key={post.id}>
-            <div className="post-title">{post.title}</div>
-            <div className="post-meta">
-              <span className="post-author">{post.author}</span>
+    <>
+      <div className="h-screen flex flex-col">
+        <div className="pt-5 pb-5 px-5 flex justify-end">
+       
+    
+        </div>
+        {/**아래 컴포넌트만 변경할것 */}
+        <div className="flex-1 pl-5 pr-5 flex flex-col gap-y-5 overflow-y-auto">
+          <div className="page-content">
+            <div className="community-header-row">
+              <h2 className="community-title">게시판</h2>
+              <div className="community-region">
+                [ 부산 | 진구 ] 자유게시판 ▼
+              </div>
+              <button
+                className="header-add-button"
+                onClick={() => setShowModal(true)}
+                aria-label="글쓰기"
+              >
+                ＋
+              </button>
+              <img
+                src="/images/Icon.png"
+                alt="notification"
+                className="notification-icon"
+              />
             </div>
-            <div className="post-content">{post.content}</div>
+            <div className="post-list">
+              {posts.map((post) => (
+                <div className="post-card" key={post.id}>
+                  <div className="post-title">{post.title}</div>
+                  <div className="post-meta">
+                    <span className="post-author">{post.author}</span>
+                  </div>
+                  <div className="post-content">{post.content}</div>
+                </div>
+              ))}
+            </div>
+            {showModal && (
+              <AddPostModal
+                onClose={() => setShowModal(false)}
+                onSave={handleAddPost}
+              />
+            )}
           </div>
-        ))}
+        </div>
+        {/**아래 컴포넌트 변경 금지 */}
+        <BottomNavBar />
+        <div />
       </div>
-      {showModal && (
-        <AddPostModal
-          onClose={() => setShowModal(false)}
-          onSave={handleAddPost}
-        />
-      )}
-    </div>
+    </>
   );
 };
 

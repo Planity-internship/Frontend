@@ -1,17 +1,22 @@
-import './CurrentClassSection.css';
+import { Card } from "@/components/ui/card";
+import "./CurrentClassSection.css";
 
 const CurrentClassSection = () => {
   return (
-    <div className="current-class-container">
-      <div className="class-time-box">
-        <p className="class-time">14:00 - 16:00</p>
-        <p className="class-status">수업 중</p>
-      </div>
-      <div className="class-info-box">
-        <p className="class-subject">영어</p>
-        <p className="class-academy">키움학원</p>
-      </div>
-    </div>
+    <>
+      <Card className="p-0 pt-1 pb-4">
+        <div className="grid">
+          <div className="flex justify-between p-3 text-lg font-bold">
+            <p>진행중인 수업</p>
+            <p>튼튼 영어학원</p>
+          </div>
+          <div className="flex justify-between items-center pl-3 pr-3">
+            <p className="text-3xl font-bold">17:00 ~ 18:40</p>
+            <p className="class-status">수업 중</p>
+          </div>
+        </div>
+      </Card>
+    </>
   );
 };
 
