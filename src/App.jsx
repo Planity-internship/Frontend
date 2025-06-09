@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./router/Home/Layout.tsx";
 
-import Login_layout from "./router/login/Login_layout";
-import Singup_layout from "./router/singup/Singup_layout";
-import Congratulations from "./router/Congratulations/Congratulations";
+import Login_layout from "./router/login/Login_layer.tsx";
+import Singup_layout from "./router/singup/Singup_layer.tsx";
+import Congratulations from "./router/Congratulations/Congratulations_layer.tsx";
 
 import Home from "./pages/Home";
-import TimetablePage from "./pages/TimetablePage";
-import CommunityPage from "./pages/CommunityPage";
-import MessagePage from "./pages/MessagePage";
-import AccountPage from "./pages/AccountPage";
+import TimetablePage from "./router/TimetablePage/TimetablePage_layer.tsx";
+import CommunityPage from "./router/CommunityPage/CommunityPage_layer.tsx";
+import MessagePage from "./router/MessagePage/MessagePage_layer.tsx";
+import AccountPage from "./router/AccountPage/AccountPage_layer.tsx";
 
 function App() {
   return (

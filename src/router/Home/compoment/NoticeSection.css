@@ -1,19 +1,5 @@
-.notice-item {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid #e0e0e0;
-}
-
 .notice-item:last-child {
   border-bottom: none;
-}
-
-.notice-text {
-  display: grid;
-  grid-template-columns: 90px 16px 1fr;
-  align-items: center;
-  flex: 1;
 }
 
 .notice-academy-name {
@@ -26,7 +12,6 @@
   word-break: break-word;
   margin-right: 4px;
 }
-
 
 
 .divider {
