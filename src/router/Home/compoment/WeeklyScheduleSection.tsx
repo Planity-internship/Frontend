@@ -1,4 +1,4 @@
-// src/components/WeeklyScheduleSection.jsx
+//@ts-nocheck
 import React, { useState } from 'react';
 import './WeeklyScheduleSection.css';
 

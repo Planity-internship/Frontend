@@ -1,7 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import BottomNavBar from "./BottomNavBar";
+
 import "./Layout.css";
+import BottomNavBar from "../../components/BottomNavBar";
 
 const Layout = () => (
   <div className="layout-root">

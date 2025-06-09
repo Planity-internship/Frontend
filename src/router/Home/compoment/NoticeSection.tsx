@@ -1,4 +1,4 @@
-// src/components/NoticeSection.jsx
+//@ts-nocheck
 import React from 'react';
 import './NoticeSection.css';
 

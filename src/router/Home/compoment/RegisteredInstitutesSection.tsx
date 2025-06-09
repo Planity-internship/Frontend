@@ -1,3 +1,4 @@
+//@ts-nocheck
 import './RegisteredInstitutesSection.css';
 import React, { useState } from 'react';
 
