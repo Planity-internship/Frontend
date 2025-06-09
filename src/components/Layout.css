@@ -1,0 +1,35 @@
+.layout-root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f3f4f6;
+}
+
+.layout-content {
+  width: 393px;
+  height: 100vh;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  padding: 16px 0 80px 0; /* 좌우 0, 상단 16, 하단 80 */
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  padding: 0 16px; /* 내부 컨텐츠에만 좌우 padding */
+}
+
+@media (max-width: 500px) {
+  .layout-content {
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+    padding-bottom: 80px;
+  }
+}
