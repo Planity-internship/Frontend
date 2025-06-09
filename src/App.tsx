@@ -3,15 +3,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // 각 레이아웃/페이지 컴포넌트 임포트
-import Login_layout from "./router/login/Login_layout";
-import Singup_layout from "./router/singup/Singup_layout";
-import Main_layout from "./router/Start_page/Main_layout";
-import Congratulations from "./router/Congratulations/Congratulations";
+import Login_layout from "./router/login/Login_layer";
+import Singup_layout from "./router/singup/Singup_layer";
+import Main_layout from "./router/Start_page/Main_layer";
+import Congratulations from "./router/Congratulations/Congratulations_layer";
 import Home from "./router/Home/HomeLayout";
-import TimetablePage from "./router/TimetablePage/TimetablePage";
-import CommunityPage from "./router/CommunityPage/CommunityPage";
-import MessagePage from "./router/MessagePage/MessagePage";
-import AccountPage from "./router/AccountPage/AccountPage";
+import TimetablePage from "./router/TimetablePage/TimetablePage_layer";
+import CommunityPage from "./router/CommunityPage/CommunityPage_layer";
+import MessagePage from "./router/MessagePage/MessagePage_layer";
+import AccountPage from "./router/AccountPage/AccountPage_layer";
 
 function App() {
   return (
