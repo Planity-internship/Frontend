@@ -1,0 +1,123 @@
+.page-wrapper {
+  width: 393px;
+  height: 852px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 8px #eee;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.message-header-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 10px;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.message-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  flex: none;
+}
+
+.bell-icon {
+  font-size: 22px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chat-card {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border-radius: 16px;
+  box-shadow: 0 1px 4px #eee;
+  padding: 12px 16px;
+  position: relative;
+}
+
+.chat-profile {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffb4a2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+.profile-icon {
+  font-size: 22px;
+}
+
+.chat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chat-user {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.chat-last {
+  font-size: 13px;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.unread-badge {
+  background: #ff694b;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.notification-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.page-content {
+  padding: 0; /* 반드시 padding을 0으로 설정! */
+}

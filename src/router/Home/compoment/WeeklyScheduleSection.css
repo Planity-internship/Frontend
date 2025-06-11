@@ -1,0 +1,71 @@
+.day-selector {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.day-button-text {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.day-button-text.selected {
+  color: #000;
+  border-bottom: 2px solid #444;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.schedule-time {
+  font-weight: bold;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.schedule-subject {
+  flex: 1;
+  text-align: left;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.status-badge.present {
+  background-color: #00c853; /* green */
+}
+
+.status-badge.pending {
+  background-color: #aaa; /* gray */
+}
+
+.empty-text {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
