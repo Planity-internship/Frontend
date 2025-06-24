@@ -10,7 +10,6 @@ import { Card } from "@/components/ui/card";
 // subject: string
 // status: string
 
-// weekly > 고정, time: 고정
 
 const scheduleData = {
   일: [],
